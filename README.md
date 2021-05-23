@@ -58,15 +58,29 @@ kubectl delete -f <config.file>
 ```
 
 ### Service
+
 ```
 kubectl get service
 kubectl describe service <service>
 ```
 
 ### Generated yamls
+
 ```
 kubectl get deployment -o yaml
 kubectl get service -o yaml
+```
+
+### Secret/ConfigMap
+
+```
+kubectl get secret
+kubectl get configmap
+```
+
+### Open Service to outside in minicube cluseter
+```
+minikube service mongo-express-service
 ```
 
 ## Reference
