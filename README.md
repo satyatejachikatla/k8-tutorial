@@ -83,6 +83,18 @@ kubectl get configmap
 minikube service mongo-express-service
 ```
 
+### Namespaces
+
+```
+kubectl get namespace
+kubectl cluster-info
+kubectl create namespace my-namespace
+kubect get <cmd> -n <namespace>
+kubect apply -f <file> --namespace=<namespace>
+
+kubens <namespace> # To change default namespace
+```
+
 ## Reference
 
 * Tutorial : https://www.youtube.com/watch?v=X48VuDVv0do
